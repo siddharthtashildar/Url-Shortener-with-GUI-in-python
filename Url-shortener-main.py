@@ -42,40 +42,77 @@ def shortener_main():
     s = Shortener()
     
     if Selected_api.get()=='TinyURL':
-        Short_link=s.tinyurl.short(link_get.get())
-        link_Final_set.set(Short_link)
+        try:
+            Short_link=s.tinyurl.short(link_get.get())
+            link_Final_set.set(Short_link)
+        
+        except:
+            link_Final_set.set("Error!")
 		
     elif Selected_api.get()=='Chilp.it':
-        Short_link=s.chilpit.short(link_get.get())
-        link_Final_set.set(Short_link)
+        try:
+            Short_link=s.chilpit.short(link_get.get())
+            link_Final_set.set(Short_link)
+
+        except:
+            link_Final_set.set("Error!")
 		
     elif Selected_api.get()=='Da.gd':
-        Short_link=s.dagd.short(link_get.get())
-        link_Final_set.set(Short_link)
+        try:
+            Short_link=s.dagd.short(link_get.get())
+            link_Final_set.set(Short_link)
 		
+        except:
+            link_Final_set.set("Error!")
+
     elif Selected_api.get()=='Git.io(Only Github urls)':
-        Short_link=s.gitio.short(link_get.get())
-        link_Final_set.set(Short_link)
+        try:
+            Short_link=s.gitio.short(link_get.get())
+            link_Final_set.set(Short_link)
 		
+        except:
+            link_Final_set.set("Error!")
+
     elif Selected_api.get()=='Is.gd':
-        Short_link=s.isgd.short(link_get.get())
-        link_Final_set.set(Short_link)
+        try:
+            Short_link=s.isgd.short(link_get.get())
+            link_Final_set.set(Short_link)
+
+        except:
+            link_Final_set.set("Error!")
+
 		
     elif Selected_api.get()=='Osdb.link':
-        Short_link=s.osdb.short(link_get.get())
-        link_Final_set.set(Short_link)
+        try:
+            Short_link=s.osdb.short(link_get.get())
+            link_Final_set.set(Short_link)
+
+        except:
+            link_Final_set.set("Error!")    
 		
     elif Selected_api.get()=='Qps.ru':
-        Short_link=s.qpsru.short(link_get.get())
-        link_Final_set.set(Short_link)
+        try:
+            Short_link=s.qpsru.short(link_get.get())
+            link_Final_set.set(Short_link)
+
+        except:
+            link_Final_set.set("Error!")
 		
     elif Selected_api.get()=='NullPointer':
-        Short_link=s.nullpointer.short(link_get.get())
-        link_Final_set.set(Short_link)
+        try:
+            Short_link=s.nullpointer.short(link_get.get())
+            link_Final_set.set(Short_link)
+
+        except:
+            link_Final_set.set("Error!")
 		
     elif Selected_api.get()=='Clck.ru':
-        Short_link=s.clckru.short(link_get.get())
-        link_Final_set.set(Short_link)
+        try:
+            Short_link=s.clckru.short(link_get.get())
+            link_Final_set.set(Short_link)
+        
+        except:
+            link_Final_set.set("Error!")
 	
     
 
