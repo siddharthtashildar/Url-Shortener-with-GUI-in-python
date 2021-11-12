@@ -7,6 +7,25 @@ I am a beginner so forgive me if I made mistakes.
 
 I kept the code simple and clean so anyone can understand it.
 
+You need to install some python modules to run this program:-
+
+1) Pyshorteners module-
+
+```python
+pip install pyshorteners
+```
+
+Paste and run this in your cmd or python terminal.
+
+
+2) Pyperclip module-
+
+```python
+pip install pyperclip
+```
+
+Paste and run this in your cmd or python terminal.
+
 
 
 
